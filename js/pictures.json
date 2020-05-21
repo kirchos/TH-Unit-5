@@ -1,0 +1,76 @@
+{
+  "photos": [
+    {
+      "name": "01",
+      "alttext": "Hay Bales",
+      "url": "photos/01.jpg",
+      "captions": "I love hay bales. Took this snap on a drive through the countryside past some straw fields."
+    },
+    {
+      "name": "02",
+      "alttext": "Lake",
+      "url": "photos/02.jpg",
+      "captions": "The lake was so calm today. We had a great view of the snow on the mountains from here."
+    },
+    {
+      "name": "03",
+      "alttext": "Canyon",
+      "url": "photos/03.jpg",
+      "captions": "I hiked to the top of the mountain and got this picture of the canyon and trees below."
+    },
+    {
+      "name": "04",
+      "alttext": "Iceberg",
+      "url": "photos/04.jpg",
+      "captions": "It was amazing to see an iceberg up close, it was so cold but didn’t snow today. "
+    },
+    {
+      "name": "05",
+      "alttext": "Desert",
+      "url": "photos/05.jpg",
+      "captions": "The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons."
+    },
+    {
+      "name": "06",
+      "alttext": "Fall",
+      "url": "photos/06.jpg",
+      "captions": "Fall is coming, I love when the leaves on the trees start to change color. "
+    },
+    {
+      "name": "07",
+      "alttext": "Plantation",
+      "url": "photos/07.jpg",
+      "captions": "I drove past this plantation yesterday, everything is so green!"
+    },
+    {
+      "name": "08",
+      "alttext": "Dunes",
+      "url": "photos/08.jpg",
+      "captions": "My summer vacation to the Oregon Coast. I love the sandy dunes!"
+    },
+    {
+      "name": "09",
+      "alttext": "Countryside Lane",
+      "url": "photos/09.jpg",
+      "captions": "We enjoyed a quiet stroll down this countryside lane."
+    },
+    {
+      "name": "10",
+      "alttext": "Sunset",
+      "url": "photos/10.jpg",
+      "captions": "Sunset at the coast! The sky turned a lovely shade of orange."
+    },
+    {
+      "name": "11",
+      "alttext": "Cave",
+      "url": "photos/11.jpg",
+      "captions": "I did a tour of a cave today and the view of the landscape below was breathtaking."
+    },
+    {
+      "name": "12",
+      "alttext": "Bluebells",
+      "url": "photos/12.jpg",
+      "captions": "I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."
+    }
+  ]
+}
