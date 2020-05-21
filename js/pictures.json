@@ -2,7 +2,7 @@
   "photos": [
     {
       "name": "01",
-      "alttext": "Hay Bales",
+      "alt": "Hay Bales",
       "url": "photos/01.jpg",
       "captions": "I love hay bales. Took this snap on a drive through the countryside past some straw fields."
     },
