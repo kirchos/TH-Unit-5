@@ -390,6 +390,57 @@ input[type=text] {
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 1em;
   }
+
+  .popUp {
+    background-color: rgba(0, 0, 0, 0.671);
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  .popUp .currentImg {
+    position: fixed;
+    top: 10%;
+    left: 25%;
+    width: 50%;
+    border: solid 2px #fff;
+  }
+  .popUp .img-caption {
+    background: rgba(255, 255, 255, 0.596);
+    padding: 20px 0;
+    position: absolute;
+    width: 50%;
+    top: 74%;
+    left: 25%;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+  }
+  .popUp .x {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    font-size: 5em;
+    color: rgba(255, 255, 255, 0.466);
+  }
+  .popUp .goLeft {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    font-size: 5em;
+    font-weight: bold;
+    color: #fff;
+  }
+  .popUp .goRight {
+    position: absolute;
+    top: 40%;
+    right: 15%;
+    font-size: 5em;
+    font-weight: bold;
+    color: #fff;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
