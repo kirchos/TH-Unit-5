@@ -391,55 +391,60 @@ input[type=text] {
     grid-gap: 1em;
   }
 
-  .popUp {
-    background-color: rgba(0, 0, 0, 0.671);
-    z-index: 999;
-    position: absolute;
+  .display {
+    display: block;
+    background: rgba(0, 0, 0, 0.63);
+    position: fixed;
     width: 100%;
     height: 100%;
+    z-index: 100;
     top: 0;
     left: 0;
   }
-  .popUp .currentImg {
-    position: fixed;
-    top: 10%;
-    left: 25%;
-    width: 50%;
-    border: solid 2px #fff;
+  .display img,
+.display span {
+    display: block;
+    width: 900px;
+    border: solid 3px #fff;
   }
-  .popUp .img-caption {
-    background: rgba(255, 255, 255, 0.596);
-    padding: 20px 0;
-    position: absolute;
-    width: 50%;
-    top: 74%;
+  .display img {
+    position: relative;
+    top: 45%;
     left: 25%;
-    font-size: 1.3em;
-    font-weight: bold;
+    transform: translateY(-45%);
+  }
+  .display .captions {
+    background-color: #fff;
+    padding: 20px 10px;
+    font-size: 1.4em;
     text-align: center;
+    position: relative;
+    top: 15%;
+    left: 25%;
   }
-  .popUp .x {
-    position: absolute;
-    top: 5%;
-    right: 10%;
-    font-size: 5em;
-    color: rgba(255, 255, 255, 0.466);
-  }
-  .popUp .goLeft {
-    position: absolute;
-    top: 40%;
-    left: 15%;
-    font-size: 5em;
-    font-weight: bold;
+  .display .x,
+.display .goLeft,
+.display .goRight {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 3em;
     color: #fff;
+    width: 1.5em;
+    height: 1.35em;
+    border-radius: 100%;
   }
-  .popUp .goRight {
-    position: absolute;
-    top: 40%;
-    right: 15%;
-    font-size: 5em;
-    font-weight: bold;
-    color: #fff;
+  .display .x {
+    top: -60%;
+    left: 80%;
+  }
+  .display .goLeft {
+    bottom: 25%;
+    left: 17%;
+  }
+  .display .goRight {
+    bottom: 32%;
+    left: 76%;
   }
 }
 
