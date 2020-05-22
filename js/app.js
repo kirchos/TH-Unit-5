@@ -39,7 +39,7 @@ $().ready(function () {
 
         if ($(this).attr('alt') === altText) {
 
-          dispayContent.html(`<img src="${$img}" alt="${altText}" class='active'><span class='count'></span> <span class='captions'>${caption}</span><span class="x">X</span><span class="goLeft"><</span><span class="goRight">></span>`).show()
+          dispayContent.html(`<span class="goLeft"><</span><img src="${$img}" alt="${altText}" class='active'><span class='count'></span> <span class='captions'>${caption}</span><span class="x">X</span><span class="goRight">></span>`).show()
 
 
           $('.goRight').on('click', function () {

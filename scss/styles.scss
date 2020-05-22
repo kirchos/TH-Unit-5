@@ -1,5 +1,5 @@
 //  @import 'utilities/index';
- @import 'base/index';
+@import 'base/index';
 //  @import 'components/index';
 
 #search-box {
@@ -69,7 +69,7 @@ input[type='text'] {
        }
        img {
            position: relative;
-           top: 45%;
+           top: 35%;
            left: 25%;
            transform: translateY(-45%);
        }
@@ -79,7 +79,7 @@ input[type='text'] {
            font-size: 1.4em;
            text-align: center;
            position: relative;
-           top: 15%;
+           top: 5%;
            left: 25%;
        }
        .x,
@@ -95,15 +95,15 @@ input[type='text'] {
         border-radius: 100%;
        }
        .x {
-        top: -60%;
+        top: -65%;
         left: 80%;
        }
        .goLeft {
-        bottom: 25%;
+        top:45%;
         left: 17%;
        }
        .goRight {
-        bottom: 32%;
+        bottom: 33%;
         left: 76%;
        }
        .count{

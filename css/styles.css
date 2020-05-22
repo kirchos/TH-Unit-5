@@ -409,7 +409,7 @@ input[type=text] {
   }
   .display img {
     position: relative;
-    top: 45%;
+    top: 35%;
     left: 25%;
     transform: translateY(-45%);
   }
@@ -419,7 +419,7 @@ input[type=text] {
     font-size: 1.4em;
     text-align: center;
     position: relative;
-    top: 15%;
+    top: 5%;
     left: 25%;
   }
   .display .x,
@@ -435,15 +435,15 @@ input[type=text] {
     border-radius: 100%;
   }
   .display .x {
-    top: -60%;
+    top: -65%;
     left: 80%;
   }
   .display .goLeft {
-    bottom: 25%;
+    top: 45%;
     left: 17%;
   }
   .display .goRight {
-    bottom: 32%;
+    bottom: 33%;
     left: 76%;
   }
   .display .count {
