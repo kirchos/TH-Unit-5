@@ -18,54 +18,68 @@ $().ready(function () {
     })
   };
 
+  $('span').hide();
+
   readTextFile('js/pictures.json', function (text) {
     const data = JSON.parse(text);
     const list = data.photos;
 
     $('#gallery-container').on('click', 'img', function () {
-      for (let i = 0; i < list.length; i++) {
-        const altText = list[i].alttext;
-        const caption = list[i].captions;
-        const $img = list[i].url;
+
+      list.forEach((item, index, arr) => {
+        const altText = item.alttext;
+        const caption = item.captions;
+        const $img = item.url;
+        // console.log("Current: " + item.altte);
+        // console.log("Previous: " + ((0 === index) ? "START" : arr[index - 1].name));
+        // console.log("Next: " + ((arr.length - 1 === index) ? "END" : arr[index + 1].name));
         const dispayContent = $('.display');
+
+
 
         if ($(this).attr('alt') === altText) {
 
-          dispayContent.html(`<img src="${$img}" alt="${altText}" class='active'> <span class='captions'>${caption}</span><span class="x">X</span><span class="goLeft"><</span><span class="goRight">></span>`).show()
+          dispayContent.html(`<img src="${$img}" alt="${altText}" class='active'><span class='count'></span> <span class='captions'>${caption}</span><span class="x">X</span><span class="goLeft"><</span><span class="goRight">></span>`).show()
 
 
           $('.goRight').on('click', function () {
-            let currentIndex = list.indexOf(list[i]);
-            let nextIndex = (currentIndex + 1) % list.length;
+            var img = arr[index + 1].url
+            $('.active').attr('src', img);
 
-            $('.active').attr('src', list[nextIndex].url)
-            if (list[nextIndex].alttext) {
+            $(".captions").text(arr[index + 1].captions);
+            $('.count').text(arr[index++].name)
+            // console.log() 
+            // console.log($(arr[index + 1].url))
 
-              $('.active').attr('src', list[nextIndex].url)
-              console.log(list[nextIndex].alttext)
-
-              //test
-              list.forEach((item, index, arr) => {
-                console.log("Current: " + item.alttext);
-                console.log("Previous: " + ((0 === index) ? "START" : arr[index - 1].name));
-                console.log("Next: " + ((arr.length - 1 === index) ? "END" : arr[index + 1].name));
-              });
+            if (index === (list.length) - 1) {
+              $('.goRight').hide();
+              console.log('end')
             }
           })
+
+          $('.goLeft').on('click', function () {
+            var img = arr[index - 1].url
+            $('.active').attr('src', img);
+
+            $(".captions").text(arr[index - 1].captions);
+            $('.count').text(arr[index--].name)
+
+            if (index === 0) {
+              $('.goLeft').hide();
+              console.log('end')
+            }
+          })
+
 
           $('.x').click(function () {
             $('.display').hide()
           })
         }
+      });
 
 
 
 
-
-
-
-
-      }
     });
   });
   //

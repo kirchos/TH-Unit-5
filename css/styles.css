@@ -384,7 +384,7 @@ input[type=text] {
     padding: 5px;
   }
 
-  #gallery-container {
+  .img-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -445,6 +445,9 @@ input[type=text] {
   .display .goRight {
     bottom: 32%;
     left: 76%;
+  }
+  .display .count {
+    display: none;
   }
 }
 
