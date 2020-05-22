@@ -19,6 +19,7 @@ $().ready(function () {
   };
 
   $('span').hide();
+  $('.goLeft').hide();
 
   readTextFile('js/pictures.json', function (text) {
     const data = JSON.parse(text);
@@ -43,6 +44,7 @@ $().ready(function () {
 
 
           $('.goRight').on('click', function () {
+
             var img = arr[index + 1].url
             $('.active').attr('src', img);
 
@@ -55,9 +57,11 @@ $().ready(function () {
               $('.goRight').hide();
               console.log('end')
             }
+            $('.goLeft').show();
           })
 
           $('.goLeft').on('click', function () {
+            $('.goRight').show();
             var img = arr[index - 1].url
             $('.active').attr('src', img);
 
@@ -72,7 +76,7 @@ $().ready(function () {
 
 
           $('.x').click(function () {
-            $('.display').hide()
+            $('.display').hide();
           })
         }
       });

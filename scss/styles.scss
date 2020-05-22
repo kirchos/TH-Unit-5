@@ -17,7 +17,7 @@ input[type='text'] {
 #gallery-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: 1fr;
     grid-gap: 1em;
 }
 
